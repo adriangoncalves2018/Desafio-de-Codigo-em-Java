@@ -1,0 +1,29 @@
+//Manipulação de string 
+/*
+Questão 1 
+1. Reverta a ordem das palavras nas frases, mantendo a ordem das palavras:
+a. Input: "Hello, Worldi OpenAl is amazing."
+Output "amazing. is OpenAl World! Hello,” 
+*/
+ //Solução 
+
+public class InverterTexto {
+
+    public static void main(String[] args) {
+        String input = "Hello, World! OpenAI is amazing.";
+        String output = reverseWords(input);
+        System.out.println(output);
+    }
+
+    public static String reverseWords(String input) {
+        String[] words = input.split(" ");
+        String reversed = "";
+        // Percorrer as palavras na ordem inversa
+        for (int i = words.length - 1; i >= 0; i--) {
+            reversed += words[i] + " ";
+        }
+        // Remover o espaço extra no final da frase 
+        reversed = reversed.trim();
+        return reversed;
+    }
+}
