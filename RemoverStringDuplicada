@@ -1,0 +1,23 @@
+/*
+Questão 2 
+2. Remova todos os caracteres duplicados da string abaixo:
+Input "Hello. World!”
+Output Helo, Wrd!
+ */
+ //Solução
+public class RemoverStrings {   
+    public static void main(String[] args) {
+
+        //declaração de string 
+        String entrada = "Hello, World!";
+        StringBuilder s = new StringBuilder();
+
+        //O for irá pecorrer a string e o if pelo indexOf se caso encontrar um caracterer duplicado irá remover 
+        for (char cp : entrada.toCharArray()) {
+            if (s.indexOf(String.valueOf(cp)) == -1) {
+                s.append(cp);
+            }
+        }
+        System.out.println(s.toString());
+    }
+}
