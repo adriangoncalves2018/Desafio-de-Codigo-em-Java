@@ -1,3 +1,13 @@
+/* 
+Questão 3 
+3. Encontre a substring palindroma mais longa na string abaixo:
+Input: "babad"
+Output: "bab” (Observação: pode haver várias saídas válidas, você só precisa
+retomar uma delas.)
+
+*/
+
+//Solução
 public class ProcurarSubtring {
     public static void main(String[] args) {
         String input = "babad";
