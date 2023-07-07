@@ -5,7 +5,7 @@ Input "Hello. World!”
 Output Helo, Wrd!
  */
  //Solução
-public class RemoverStrings {   
+public class RemoverStringDuplicada {   
     public static void main(String[] args) {
 
         //declaração de string 
